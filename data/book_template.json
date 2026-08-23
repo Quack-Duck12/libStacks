@@ -1,0 +1,45 @@
+{
+  "title": "",
+  "authors": [""],
+  "genre": [""],
+  "series": {
+    "name": "",
+    "seriesID": 0,
+    "number": [0]
+  },
+  "identification": {
+    "ID": "0",
+    "isbn": "",
+    "isbn13": "",
+    "goodreadsID": ""
+  },
+  "publication": {
+    "binding": "",
+    "pages": 0,
+    "publisher": "",
+    "yearPublished": 0,
+    "originalPublicationYear": 0
+  },
+  "dimensions": {
+    "height_mm": 0,
+    "width_mm": 0,
+    "depth_mm": 0
+  },
+  "images": {
+    "spine": "",
+    "cover": "",
+    "foreEdge": ""
+  },
+  "color": {
+    "foreEdge": "",
+    "front": "",
+    "spine": ""
+  },
+  "user": {
+    "pagesRead": 0,
+    "dateRead": "",
+    "rating": 0,
+    "review": "",
+    "notes": ""
+  }
+}
