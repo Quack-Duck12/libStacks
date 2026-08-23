@@ -1,0 +1,27 @@
+{
+  "name": "libstacks",
+  "version": "1.0.0",
+  "description": "A cordova + express based webapp with android support application with the goal of acting as a hub for book organisation",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"nodemon server/server.js\" \"browser-sync start --proxy localhost:9898 --files public/**/* server/**/* --reloadDelay 100 --open local\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Quack-Duck12/libStacks.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Quack-Duck12/libStacks/issues"
+  },
+  "homepage": "https://github.com/Quack-Duck12/libStacks#readme",
+  "devDependencies": {
+    "browser-sync": "^3.0.4",
+    "concurrently": "^10.0.5",
+    "express": "^5.2.1",
+    "nodemon": "^3.1.14"
+  }
+}
