@@ -6,17 +6,18 @@ This folder contains all user-related data, such as book objects and their cover
 
 ```
 data/
-├── book_template.json
+├── template/
+│   └── book.json
 ├── cover/
 │   ├── front/
 │   └── spine/
 ├── README.md
-└── temp.env.json #temp W.I.P placeholder (untracked via git)
+└── test.env.json #temp W.I.P placeholder (untracked via git)
 ```
 
 ## Book Object Model
 
-Each book is represented as a JSON object of the following shape (see [`book_template.json`](./book_template.json)):
+Each book is represented as a JSON object of the following shape (see [`book_template.json`](./template/book.json)):
 
 ```json
 {

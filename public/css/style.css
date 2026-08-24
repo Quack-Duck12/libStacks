@@ -1,3 +1,117 @@
-body{
-    background: white;
+:root {
+    /* ───────── Base ───────── */
+
+    --background: oklch(0.975 0.008 80);
+    --surface: oklch(0.995 0.004 80);
+
+    --text: oklch(0.22 0.015 60);
+    --text-muted: oklch(0.50 0.015 60);
+
+
+    /* ───────── Accent ───────── */
+
+    --ui-accent: oklch(0.86 0.13 75);
+
+    --ui-accent-background:
+        oklch(0.96 0.025 75);
+
+    --ui-accent-hover:
+        oklch(0.78 0.15 75);
+
+    --ui-accent-active:
+        oklch(0.70 0.16 75);
+
+    --ui-accent-text:
+        oklch(0.20 0.025 65);
+
+
+    /* ───────── Borders ───────── */
+
+    --border:
+        oklch(0.88 0.025 75);
+
+    --border-hover:
+        oklch(0.72 0.08 75);
+
+
+    /* ───────── UI states ───────── */
+
+    --success: oklch(0.65 0.14 145);
+    --warning: oklch(0.75 0.15 80);
+    --danger: oklch(0.62 0.18 25);
+    --info: oklch(0.65 0.12 240);
+}
+
+* {
+    /* outline: 1px solid red; */
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    min-height: 100vh;
+    min-height: 100svh;
+
+    padding: 0.3rem;
+
+    background: var(--background);
+
+    display: flex;
+
+}
+
+.nav-sidebar {
+
+    min-width: 15vw;
+    padding: 1rem 1.2rem 0 0.6rem;
+    background: var(--ui-accent-background);
+
+    .logo-brand {
+        padding: 1rem;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        * {
+            display: flex;
+            align-items: center;
+        }
+
+        .sidebar-nav-links {
+            background: var(--ui-accent);
+            color: var(--text);
+            text-decoration: none;
+            font-size: 1.4rem;
+            position: relative;
+
+            margin: 4px 1px;
+
+            border-radius: 0 15px 15px 0;
+            border: 0;
+
+            transition: border 120ms linear;
+
+            &:hover {
+                background: var(--ui-accent-hover);
+                color: var(--text-active);
+
+                border: 3px solid gray;
+                border-left: 0;
+            }
+
+            span {
+                padding: 0.6rem;
+
+                svg {
+                    width: 1.7rem;
+                }
+            }
+        }
+    }
 }

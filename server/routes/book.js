@@ -5,9 +5,8 @@ const path = require('path');
 const router = express.Router();
 
 // W.I.P Test
-const booksPath = path.join(__dirname, '../../data/temp.env.json');
+const booksPath = path.join(__dirname, '../../data/test.env.json');
 let books = JSON.parse(fs.readFileSync(booksPath, 'utf-8'));
-
 
 // Search Via Internal ID
 router.get('/id/:id', (req, res) => {
